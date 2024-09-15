@@ -4,6 +4,11 @@
 
 Binaries ready to run Linux on arch RiscV64GC with QEMU.
 
+# Description
+
+Kernel: 6.11.0 with LLVM.
+Bash: BusyBox 1.36. 
+
 # Required
 
 QEMU
@@ -15,6 +20,12 @@ QEMU is a generic and open source machine emulator and virtualizer.
 RHEL Linux 
 ```
 sudo dnf install qemu-system-riscv
+```
+
+# How to run:
+
+```
+./start.sh
 ```
 
 # Base articles
