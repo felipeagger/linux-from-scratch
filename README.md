@@ -6,7 +6,7 @@ Binaries ready to run Linux on arch RiscV64GC with QEMU.
 
 # Description
 
-- Kernel: 6.11.0 with LLVM(clang version 17.0.6).
+- Kernel: 6.11.0 with LLVM(clang version 17.0.6) and Rust Support Enabled.
 - Bash: BusyBox 1.36.
 - BootFS: initramfs.cpio.gz
 - Init Script: /init
