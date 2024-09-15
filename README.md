@@ -6,8 +6,10 @@ Binaries ready to run Linux on arch RiscV64GC with QEMU.
 
 # Description
 
-Kernel: 6.11.0 with LLVM.
-Bash: BusyBox 1.36. 
+- Kernel: 6.11.0 with LLVM.
+- Bash: BusyBox 1.36.
+- BootFS: initramfs.cpio.gz
+- Init Script: /init
 
 # Required
 
