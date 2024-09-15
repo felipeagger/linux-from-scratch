@@ -37,3 +37,46 @@ sudo dnf install qemu-system-riscv
 - https://risc-v-machines.readthedocs.io/en/latest/linux/simple/
 
 - https://github.com/UCanLinux/riscv64-sample
+
+# Output
+
+```
+riscv qemu-system-riscv64 -nographic -machine virt -bios default \
+  -kernel bootRustLLVM/Image \
+  -initrd initramfs.cpio.gz \
+  -m 2048M \
+  -append "console=ttyS0"
+
+OpenSBI v0.6
+   ____                    _____ ____ _____
+  / __ \                  / ____|  _ \_   _|
+ | |  | |_ __   ___ _ __ | (___ | |_) || |
+ | |  | | '_ \ / _ \ '_ \ \___ \|  _ < | |
+ | |__| | |_) |  __/ | | |____) | |_) || |_
+  \____/| .__/ \___|_| |_|_____/|____/_____|
+        | |
+        |_|
+
+Platform Name          : QEMU Virt Machine
+Platform HART Features : RV64ACDFIMSU
+Platform Max HARTs     : 8
+Current Hart           : 0
+Firmware Base          : 0x80000000
+Firmware Size          : 120 KB
+Runtime SBI Version    : 0.2
+
+MIDELEG : 0x0000000000000222
+...
+...
+initing...
+mounting...
+Welcome to you Linux RISC-V 64 Environment!
+arch: riscv64: Linux (none) 6.11.0-rc4-gc97670d2ca04 #1 SMP Sat Sep 14 14:53:54 -03 2024 riscv64 GNU/Linux
+~ # ls
+bin                init               proc               tmp
+dev                initramfs.cpio.gz  root               usr
+etc                linuxrc            sbin
+home               mnt                sys
+~ # cd bin
+/bin #
+```
