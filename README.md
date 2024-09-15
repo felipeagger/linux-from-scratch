@@ -1,4 +1,4 @@
-# riscv64-linux-from-scratch
+# RiscV64-Linux-from-scratch
 
 *These binaries/kernel were compiled on a x86_64 PC with target arch riscv64!*
 
@@ -6,7 +6,7 @@ Binaries ready to run Linux on arch RiscV64GC with QEMU.
 
 # Description
 
-- Kernel: 6.11.0 with LLVM.
+- Kernel: 6.11.0 with LLVM(clang version 17.0.6).
 - Bash: BusyBox 1.36.
 - BootFS: initramfs.cpio.gz
 - Init Script: /init
