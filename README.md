@@ -78,5 +78,6 @@ dev                initramfs.cpio.gz  root               usr
 etc                linuxrc            sbin
 home               mnt                sys
 ~ # cd bin
-/bin #
+/bin # cat /proc/version
+Linux version 6.11.0-rc4-gc97670d2ca04 (clang version 17.0.6, LLD 18.1.7)
 ```
