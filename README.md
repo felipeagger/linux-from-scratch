@@ -1,8 +1,8 @@
-# RiscV64-Linux-from-scratch
+# Linux-from-scratch
 
-*These binaries/kernel were compiled on a x86_64 PC with target arch riscv64!*
+*These binaries/kernel were compiled with CLang(LLVM)!*
 
-Binaries ready to run Linux on arch RiscV64GC with QEMU.
+Binaries ready to run Linux on arch's: Arm64, x86_64 & RiscV64 with QEMU.
 
 # Description
 
@@ -10,6 +10,11 @@ Binaries ready to run Linux on arch RiscV64GC with QEMU.
 - Bash: BusyBox 1.36.
 - BootFS: initramfs.cpio.gz
 - Init Script: /init
+
+# TODOs
+
+- Add C Compiler (like a TinyCC)
+- Add InitSystem (like a systemd/OpenRC)
 
 # Required
 
@@ -21,7 +26,7 @@ QEMU is a generic and open source machine emulator and virtualizer.
 
 RHEL Linux 
 ```
-sudo dnf install qemu-system-riscv
+sudo dnf install qemu-system-riscv qemu-system-x86_64, qemu-system-aarch64
 ```
 
 # How to run:
