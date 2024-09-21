@@ -14,7 +14,6 @@ Binaries ready to run Linux on arch's: Arm64, x86_64 & RiscV64 with QEMU.
 # TODOs
 
 - Add C Compiler (like a TinyCC)
-- Add InitSystem (like a systemd/OpenRC)
 
 # Required
 
